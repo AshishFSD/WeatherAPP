@@ -27,10 +27,10 @@ let weather = {
 
                         document.getElementById("city").innerHTML = "Weather in " + name; //update city name
                         document.getElementById("weather-icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
-                        document.getElementsByClassName("temp")[0].innerHTML = temp + " °C";
-                        document.getElementsByClassName("temp")[1].innerHTML = speed;
+                        document.getElementsByClassName("temp")[0].innerHTML = "Temperature " + temp + " °C";
+                        document.getElementsByClassName("temp")[1].innerHTML = "Wind " + speed;
                         document.getElementsByClassName("tem-des")[0].innerHTML = description;
-                        document.getElementsByClassName("tem-des")[1].value = humidity;
+                        document.getElementsByClassName("tem-des")[1].value = humidity + "%";
                         document.getElementById("today").innerHTML = today
 
                   })
