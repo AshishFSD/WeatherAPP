@@ -1,0 +1,45 @@
+@media only screen and (max-width: 750px) {
+                 
+   .conatiner{
+         width: 90%;
+         height: 90% !important;
+   }
+
+     .input-top{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap:10px;
+     }
+
+     .bottom-container{
+           display: flex;
+           flex-direction:column;
+           width: 100%;
+           height: 30%;
+     }
+     .temp-details{
+           width: 100%;
+           flex-direction: row;
+           align-items: center;
+           height: 100px;
+     }
+
+     .weather-date{
+           width: 100%;
+           height: 70px;
+      
+      }
+}
+         
+
+
+
+
+
+
+
+
+
+    
+    

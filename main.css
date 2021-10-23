@@ -1,0 +1,161 @@
+/*=== google font link===*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap');
+
+/*=== website color ===*/
+
+:root{
+      --blue:#5C7AEA;
+      --black:#212121;
+      --light-black:#9D9D9D;
+      --container-bg:#fff;
+}
+
+:root{
+
+      --Border-radious:.4rem;
+      --para-font:.8rem;
+      --font-Type: 'Montserrat', sans-serif;
+}
+
+/*=== selects all HTML elements and applied below mantion css ===*/
+
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      border: none;
+      overflow: hidden;
+      font-family: 'Roboto Slab', serif;
+
+
+}
+
+   
+
+body{
+    width: 100vw;
+    height: 100vh;  
+    background-color: var(--blue);
+    transition: background-color .5s;
+      background: linear-gradient(to right, var(--blue),#667fdb, rgb(219, 216, 216)); 
+
+}
+
+.conatiner{
+      
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: #fff;
+      width: 50vw;
+      height:80% !important;
+      height: auto;
+      border-radius: var(--Border-radious);
+      margin: 20px auto;
+      transition: all 0.5s;
+
+}
+
+.top-container{
+      height: 60%;
+    }
+
+
+ .input-section{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+
+    }
+
+
+input[type=text] {
+      width: 15rem;
+      height: 2rem;
+      border-bottom: 2px solid black;
+      transition: border-bottom 0.9s ;
+    }
+    
+
+    input[type=text]:focus {
+      border: none;
+      border-bottom: 2px solid var(--blue);
+      outline: none;
+    }
+
+
+
+.btn{
+      width: 100px;
+      height: 2rem;
+      background-color: var(--black);
+      color: var(--container-bg);
+      font-size: 1rem;
+}
+
+
+
+/* Button Animation  */ 
+
+
+.btn {
+      border-radius: var(--Border-radious);
+      background-color:var(--black);
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      width: 100px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+       
+    .btn:hover{
+      padding-left: 25px;
+      background-color:var(--blue);
+    }
+    
+    
+
+
+.weather-img >img {
+      width: 80px;
+      height:80px;
+      border-radius: 50%;
+      border-color:#fff !important;
+}
+
+.bottom-container{
+width: 100%;
+ display: flex;
+ background-color: var(--black);
+ height: 20%;
+ justify-content: space-between;
+ color: #fff;
+ 
+}
+
+.temp-details{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;     
+      width: 60%;
+      
+}
+
+.weather-date{
+      background-color: var(--blue);
+      width: 30%;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+}
+
+
+
