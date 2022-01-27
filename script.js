@@ -1,8 +1,11 @@
 
 let today = new Date().toISOString().slice(0, 10);
+
+// weather API object
+
 let weather = {
 
-      apiKey: "83726eb96b2f5b24f1aa10b19fa264c4",
+      apiKey: "83726eb96b2f5b24f1aa10b19fa264c4", // Api Key
 
       fetchWeatherData: function (name) {
 
@@ -17,15 +20,21 @@ let weather = {
 
                   .then(response => response.json())  // convert to json
                   .then(data => {
+
+                        console.log(data)
+
+
+                        //    
                         const { name } = data;
                         const { icon, description } = data.weather[0];
                         const { temp, humidity, temp_min, temp_max } = data.main;
                         const { speed } = data.wind;
                         const { visibility } = data;
 
+                        console.log(visibility)
                         /*sending data to website*/
 
-                        document.getElementById("city").innerHTML = "Weather in " + name; //update city name
+                        document.getElementById("city").innerHTML = `Weather in ${name}`; //update city name
                         document.getElementById("weather-icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
                         document.getElementsByClassName("temp")[0].innerHTML = "Temperature " + temp + " °C";
                         document.getElementsByClassName("temp")[1].innerHTML = "Wind " + speed + " Km/S";
@@ -33,8 +42,8 @@ let weather = {
                         document.getElementsByClassName("tem-des")[1].value = humidity + "%";
                         document.getElementById("today").innerHTML = today
 
-                        document.getElementsByClassName("min-temp")[0].innerHTML = "Temp Min :" + temp_min;
-                        document.getElementsByClassName("min-temp")[1].innerHTML = "Temp Max :" + temp_max;
+                        document.getElementsByClassName("min-temp")[0].innerHTML = "Min  Temp 👉 " + temp_min;
+                        document.getElementsByClassName("min-temp")[1].innerHTML = " Max Temp  👉 " + temp_max;
 
                   })
 

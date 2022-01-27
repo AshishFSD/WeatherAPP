@@ -37,10 +37,9 @@
 body{
     width: 100vw;
     height: 100vh;  
-    background-color: var(--blue);
-    transition: background-color .5s;
-      background: linear-gradient(to right, var(--blue),#667fdb, rgb(219, 216, 216)); 
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .conatiner{
@@ -49,13 +48,10 @@ body{
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      background-color: #fff;
+      background-color: rgb(221, 220, 220);
       width: 50vw;
       height:80% !important;
       height: auto;
-      border-radius: var(--Border-radious);
-      margin: 20px auto;
-      transition: all 0.5s;
 
 }
 
@@ -131,6 +127,54 @@ input[type=text] {
           display: flex;
           justify-content: space-around;
     }
+
+    /* middle section css */
+
+
+    .middleSection{
+          height: 50%;
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+    }
+
+    .middleleft , .middleright{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           width: 40%;
+           color: #fff;
+          height: 100%;
+          border-radius: 5px;
+          box-shadow:  1px 5px 10px black;
+          background-image: radial-gradient( circle 860px at 11.8% 33.5%,  rgba(240,30,92,1) 0%, rgba(244,49,74,1) 30.5%, rgba(249,75,37,1) 56.1%, rgba(250,88,19,1) 75.6%, rgba(253,102,2,1) 100.2% );;
+    }
+
+    .icon {
+          width: 150px;
+          height: 150px;
+          animation-name: gow;
+          animation-duration: 4s;
+          transition: all 5s;
+          animation-iteration-count: infinite;
+
+
+    }
+
+@keyframes gow {
+   0%   {width: 150px;}
+  25%  {width: 160px;}
+  50%  {width: 165px;}
+  100% {width: 170px;}
+    }
+  .min-temp{
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: normal;
+  }
+
+
 
 .weather-img >img {
       width: 100px;
