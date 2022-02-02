@@ -75,3 +75,15 @@ function myFunction() {
 
       const fithData = weather.fetchWeatherData("PATNA");
 }
+
+//******************************************** */
+
+
+const arry = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+
+
+// problem is to find the idex of 5
+
+
+
