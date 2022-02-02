@@ -67,13 +67,23 @@ body{
       align-items: center;
       height: 100%;
       width: 100%;
+      color: #fff;
+      position: relative;
 
     }
 
+    .input-section  .fas{
+          font-size: 40px;
+          color: red;
+          position: absolute;
+          left: 19%;
+    }
 
 input[type=text] {
       width: 15rem;
       height: 2rem;
+      padding: 10px;
+      border: none;
       border-bottom: 2px solid black;
       transition: border-bottom 0.9s ;
     }

@@ -20,10 +20,6 @@ let weather = {
 
                   .then(response => response.json())  // convert to json
                   .then(data => {
-
-                        console.log(data)
-
-
                         //    
                         const { name } = data;
                         const { icon, description } = data.weather[0];
@@ -31,7 +27,6 @@ let weather = {
                         const { speed } = data.wind;
                         const { visibility } = data;
 
-                        console.log(visibility)
                         /*sending data to website*/
 
                         document.getElementById("city").innerHTML = `Weather in ${name}`; //update city name
@@ -41,7 +36,6 @@ let weather = {
                         document.getElementsByClassName("tem-des")[0].innerHTML = description;
                         document.getElementsByClassName("tem-des")[1].value = humidity + "%";
                         document.getElementById("today").innerHTML = today
-
                         document.getElementsByClassName("min-temp")[0].innerHTML = "Min  Temp 👉 " + temp_min;
                         document.getElementsByClassName("min-temp")[1].innerHTML = " Max Temp  👉 " + temp_max;
 
@@ -69,21 +63,11 @@ function updateData() {
 
 }
 
-
-
 function myFunction() {
 
       const fithData = weather.fetchWeatherData("PATNA");
 }
 
-//******************************************** */
-
-
-const arry = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-
-
-
-// problem is to find the idex of 5
 
 
 
