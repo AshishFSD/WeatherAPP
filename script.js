@@ -9,8 +9,7 @@ let weather = {
 
       fetchWeatherData: function (name) {
 
-            fetch(
-                  "https://api.openweathermap.org/data/2.5/weather?q=" +
+            fetch("https://api.openweathermap.org/data/2.5/weather?q=" +
                   name +
                   "&units=metric&appid=" +
                   this.apiKey
@@ -47,7 +46,7 @@ let weather = {
 
 
                   .catch(() => {
-                        document.getElementById("city").innerHTML = "Please search for a valid city 😩";
+                        document.getElementById("city").innerHTML = " Oh 😩!! Please search for a valid city ";
                   });// Catch errors.
 
 
