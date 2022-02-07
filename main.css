@@ -159,6 +159,7 @@ input[type=text] {
            border-radius: 5px;
            box-shadow:  1px 5px 10px black;
            background-color: var(--blue);
+           font-size: 10px;
     }
 
     .icon {
